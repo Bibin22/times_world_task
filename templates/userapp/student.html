@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<div class="row ">
+    <div class="col-12 card mt-5">
+        <div class="card-body">
+            <div class="card-title py-3">
+                <h1>Student Details</h1>
+            </div>
+            <div class="table-responsive">
+
+                <table class="table table-hover" style="width:100%">
+                    <tr>
+                        <th>Name:</th>
+                        <td>{{user.name}}</td>
+                        <th>Phone No:</th>
+                        <td>{{user.mobile}}</td>
+
+                    </tr>
+                    <tr>
+                        <th>Email:</th>
+                        <td>{{user.email}}</td>
+                        <th>Country:</th>
+                        <td>{{user.country}}</td>
+                    </tr>
+                    <tr>
+                        <th>Nationality:</th>
+
+                        <td>{{user.nationality}}</td>
+                        <th></th>
+
+                        <td></td>
+
+                    </tr>
+                </table>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
